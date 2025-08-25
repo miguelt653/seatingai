@@ -63,17 +63,37 @@ nav a:hover {
   background: linear-gradient(135deg, #2ecc71, #27ae60);
   color: #fff;
   padding: 3rem 0;
-  text-align: center;
 }
 
-#hero h2 {
+/* Layout for the hero section */
+.hero-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.hero-text {
+  flex: 1 1 50%;
+}
+
+.hero-text h2 {
   font-size: 2.5rem;
   margin-bottom: 1rem;
 }
 
-#hero p {
+.hero-text p {
   font-size: 1.2rem;
   margin-bottom: 2rem;
+  max-width: 500px;
+}
+
+.hero-image {
+  flex: 1 1 45%;
+  max-width: 400px;
+  width: 100%;
+  height: auto;
 }
 
 .cta {
@@ -334,5 +354,36 @@ footer p {
   .pricing-table tbody tr td::before {
     content: attr(data-label);
     font-weight: bold;
+  }
+
+/* Decorative section graphic used above sections like Features */
+
+/* Constrain decorative images so they don't overpower the layout */
+.section-graphic {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0 auto 2rem;
+}
+
+/* Specifically size the features illustration */
+#features .section-graphic {
+  max-width: 200px;
+}
+
+  /* Make hero content stack vertically on small screens */
+  .hero-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .hero-text, .hero-image {
+    flex: 1 1 100%;
+  }
+
+  .hero-image {
+    max-width: 80%;
+    margin: 1rem auto 0;
   }
 }
