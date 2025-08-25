@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SeatingAi – Virtual Assistant for Restaurants</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>SeatingAi</h1>
+      <nav>
+        <a href="#features">Features</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#how-it-works">How&nbsp;It&nbsp;Works</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <!-- Hero Section -->
+    <section id="hero">
+      <div class="container hero-content">
+        <h2>Answer Every Call and Book Tables 24/7</h2>
+        <p>SeatingAi is your AI‑powered receptionist—taking reservations and answering questions so your staff can focus on hospitality.</p>
+        <a href="#contact" class="cta">Request&nbsp;a&nbsp;Demo</a>
+      </div>
+    </section>
+    <!-- Features Section -->
+    <section id="features">
+      <div class="container">
+        <h2>Key Features</h2>
+        <div class="feature-list">
+          <div class="feature">
+            <h3>24/7 Phone Assistant</h3>
+            <p>Never miss a call. Our voice agent answers guest inquiries and takes bookings any time of day.</p>
+          </div>
+          <div class="feature">
+            <h3>Smart Reservations</h3>
+            <p>Automatically check availability, suggest times, and confirm tables in real time.</p>
+          </div>
+          <div class="feature">
+            <h3>Multilingual Support</h3>
+            <p>Serve guests in multiple languages with natural, human‑like conversations.</p>
+          </div>
+          <div class="feature">
+            <h3>Menu &amp; FAQ Handling</h3>
+            <p>Answer common questions about menus, dietary options, hours, and more.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Pricing Section -->
+    <section id="pricing">
+      <div class="container">
+        <h2>Pricing</h2>
+        <p>Choose a plan that fits your restaurant’s needs.</p>
+        <table class="pricing-table">
+          <thead>
+            <tr>
+              <th>Plan</th>
+              <th>Features</th>
+              <th>Price</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td data-label="Plan">Starter</td>
+              <td data-label="Features">Up to 200 calls/month, reservation management</td>
+              <td data-label="Price">$49/mo</td>
+            </tr>
+            <tr>
+              <td data-label="Plan">Standard</td>
+              <td data-label="Features">Up to 1000 calls/month, multilingual support, analytics</td>
+              <td data-label="Price">$99/mo</td>
+            </tr>
+            <tr>
+              <td data-label="Plan">Pro</td>
+              <td data-label="Features">Unlimited calls, full customization, dedicated support</td>
+              <td data-label="Price">Contact us</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+    <!-- How It Works Section -->
+    <section id="how-it-works">
+      <div class="container">
+        <h2>How It Works</h2>
+        <ol class="how-list">
+          <li><strong>Set Up Your Account</strong> – Sign up and connect your existing phone line.</li>
+          <li><strong>Configure Your Preferences</strong> – Define table layouts, operating hours, and frequently asked questions.</li>
+          <li><strong>Go Live</strong> – ReserAI answers calls, books tables, and sends confirmations while you focus on guests.</li>
+          <li><strong>Monitor &amp; Optimize</strong> – Access call analytics and refine the experience to delight your customers.</li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- Call Flow Logic Section -->
+    <section id="callflow">
+      <div class="container">
+        <h2>Call Flow Logic</h2>
+        <p>
+          Our AI voice assistant follows a structured and friendly conversation
+          flow to ensure reservations are booked accurately and callers feel
+          well‑served. Here is a high‑level overview of the steps it takes:
+        </p>
+        <ol class="callflow-list">
+          <li><strong>Greeting and Intent</strong> – The assistant answers with a warm greeting and asks if the caller needs a new reservation, a modification/cancellation, or general information.</li>
+          <li><strong>Collect Details</strong> – For new reservations it gathers party size, date, time and any special requests. For changes or cancellations it asks for the reservation name and existing date/time.</li>
+          <li><strong>Check Availability</strong> – It checks real‑time availability and offers alternative times if the requested slot is full.</li>
+          <li><strong>Confirmation</strong> – It confirms the details, collects contact information (name, phone or email) and summarizes the booking before logging it in the system.</li>
+          <li><strong>Wrap Up</strong> – Finally, it offers directions or menu information and asks if there is anything else before ending the call.</li>
+        </ol>
+        <button id="demoCallFlow" class="cta secondary">Try the Call Flow</button>
+        <p class="demo-note">This demo uses simple prompts to illustrate how the conversation might proceed.</p>
+      </div>
+    </section>
+    <!-- Contact Section -->
+    <section id="contact">
+      <div class="container">
+        <h2>Contact Us</h2>
+        <p>Ready to transform your reservation experience? Fill out the form below and we’ll get back to you shortly.</p>
+        <form id="contactForm" action="mailto:info@seatingai.com" method="post" enctype="text/plain">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required />
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required />
+          <label for="phone">Phone</label>
+          <input type="tel" id="phone" name="phone" />
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="4" required></textarea>
+          <button type="submit">Send</button>
+        </form>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="container">
+      <p>&copy; 2025&nbsp;SeatingAi. All rights reserved.</p>
+    </div>
+  </footer>
+  <script src="script.js" defer></script>
+</body>
+</html>

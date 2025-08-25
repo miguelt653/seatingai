@@ -1,0 +1,338 @@
+/* Global resets */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #2c3e50;
+  background-color: #f7f7f7;
+}
+
+h1, h2, h3 {
+  color: #1d3557;
+  margin-bottom: 0.5rem;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+/* Container utility */
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 2rem 0;
+}
+
+/* Header */
+header {
+  background-color: #1d3557;
+  color: #fff;
+  padding: 1rem 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+  font-size: 1.8rem;
+  margin: 0;
+}
+
+nav {
+  margin-top: 0.5rem;
+}
+
+nav a {
+  color: #fff;
+  margin-right: 1.5rem;
+  text-decoration: none;
+  font-weight: bold;
+  transition: opacity 0.2s ease-in-out;
+}
+
+nav a:hover {
+  opacity: 0.8;
+}
+
+/* Hero section */
+#hero {
+  background: linear-gradient(135deg, #2ecc71, #27ae60);
+  color: #fff;
+  padding: 3rem 0;
+  text-align: center;
+}
+
+#hero h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+#hero p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.cta {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background-color: #e67e22;
+  color: #fff;
+  border-radius: 4px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.cta:hover {
+  background-color: #d35400;
+}
+
+/* Features section */
+#features .feature-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.feature {
+  background-color: #fff;
+  padding: 1.5rem;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease-in-out;
+}
+
+.feature:hover {
+  transform: translateY(-5px);
+}
+
+.feature h3 {
+  margin-bottom: 0.5rem;
+  color: #e67e22;
+}
+
+/* Pricing section */
+#pricing {
+  background-color: #ecf0f1;
+  padding: 3rem 0;
+  text-align: center;
+}
+
+#pricing p {
+  max-width: 700px;
+  margin: 0 auto 2rem auto;
+}
+
+.pricing-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0 auto;
+}
+
+.pricing-table th, .pricing-table td {
+  padding: 0.75rem 1rem;
+  border: 1px solid #bdc3c7;
+}
+
+.pricing-table thead {
+  background-color: #1d3557;
+  color: #fff;
+}
+
+.pricing-table tbody tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.pricing-table tbody tr:hover {
+  background-color: #eaeaea;
+}
+
+.pricing-table td:last-child {
+  font-weight: bold;
+  color: #27ae60;
+}
+
+/* How It Works section */
+#how-it-works {
+  padding: 3rem 0;
+  background-color: #fff;
+}
+
+.how-list {
+  counter-reset: step;
+  list-style: none;
+  margin-top: 2rem;
+  padding-left: 1rem;
+}
+
+.how-list li {
+  position: relative;
+  padding-left: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.how-list li:before {
+  counter-increment: step;
+  content: counter(step);
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+  background-color: #27ae60;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+/* Contact section */
+#contact {
+  background-color: #ecf0f1;
+  padding: 3rem 0;
+}
+
+/* Call Flow section */
+#callflow {
+  background-color: #fff;
+  padding: 3rem 0;
+}
+
+.callflow-list {
+  counter-reset: step;
+  list-style: none;
+  margin-top: 2rem;
+  padding-left: 1rem;
+}
+
+.callflow-list li {
+  position: relative;
+  padding-left: 2.5rem;
+  margin-bottom: 1.25rem;
+}
+
+.callflow-list li:before {
+  counter-increment: step;
+  content: counter(step);
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+  background-color: #e67e22;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.cta.secondary {
+  margin-top: 1.5rem;
+  padding: 0.75rem 1.5rem;
+  background-color: #27ae60;
+  color: #fff;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: bold;
+  cursor: pointer;
+  border: none;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.cta.secondary:hover {
+  background-color: #219150;
+}
+
+.demo-note {
+  margin-top: 0.5rem;
+  font-style: italic;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+#contact form {
+  max-width: 600px;
+  margin: 2rem auto 0 auto;
+}
+
+#contact label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+#contact input[type="text"],
+#contact input[type="email"],
+#contact input[type="tel"],
+#contact textarea {
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  border: 1px solid #bdc3c7;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+#contact button {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background-color: #e67e22;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+#contact button:hover {
+  background-color: #d35400;
+}
+
+/* Footer */
+footer {
+  background-color: #1d3557;
+  color: #fff;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+footer p {
+  margin: 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  nav a {
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+  .pricing-table thead {
+    display: none;
+  }
+  .pricing-table tbody tr {
+    display: block;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid #ddd;
+  }
+  .pricing-table tbody tr td {
+    display: flex;
+    justify-content: space-between;
+    border: none;
+    padding: 0.5rem 0;
+  }
+  .pricing-table tbody tr td::before {
+    content: attr(data-label);
+    font-weight: bold;
+  }
+}
